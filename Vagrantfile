@@ -86,9 +86,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   config.vm.provision "chef_solo" do |chef|
       chef.custom_config_path = "Vagrantfile.chef"
+      chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
       chef.add_recipe "apt"
       chef.add_recipe "python"
+      chef.add_recipe "sphinx-doc"
 
   #   # You may also specify custom JSON attributes:
   #   chef.json = { :mysql_password => "foo" }
