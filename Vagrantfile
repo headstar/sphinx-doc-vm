@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "chef/debian-7.4"
 
   # Use NFS for shared folders for better performance
-  config.vm.synced_folder '.', '/vagrant', nfs: true
+  config.vm.synced_folder '..', '/vagrant', nfs: true
 
   if Vagrant.has_plugin?("vagrant-cachier")
     # Configure cached packages to be shared between instances of the same base box.
