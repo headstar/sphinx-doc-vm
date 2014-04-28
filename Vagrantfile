@@ -12,6 +12,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "chef/debian-7.4"
 
+  # Use NFS for shared folders for better performance
+  config.vm.synced_folder '.', '/vagrant', nfs: true
+
   if Vagrant.has_plugin?("vagrant-cachier")
     # Configure cached packages to be shared between instances of the same base box.
     # More info on http://fgrehm.viewdocs.io/vagrant-cachier/usage
@@ -70,6 +73,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
      # Use VBoxManage to customize the VM. For example to change memory:
      vb.customize ["modifyvm", :id, "--memory", "1024"]
+
+     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 
 
