@@ -85,6 +85,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # some recipes and/or roles.
   #
   config.vm.provision "chef_solo" do |chef|
+      chef.custom_config_path = "Vagrantfile.chef"
+
       chef.add_recipe "apt"
       chef.add_recipe "python"
 
