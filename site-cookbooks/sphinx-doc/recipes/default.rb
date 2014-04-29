@@ -1,6 +1,8 @@
 include_recipe "python::pip"
 
+sphinxVersion = node['sphinx']['version']
+
 python_pip "Sphinx" do
-  version "1.2.2"
+  version sphinxVersion
   action :install
 end

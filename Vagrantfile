@@ -76,7 +76,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
      vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 
-
   config.omnibus.chef_version = "11.12.2"
 
   # Enable provisioning with chef solo, specifying a cookbooks path, roles
@@ -92,8 +91,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       chef.add_recipe "sphinx-doc"
       chef.add_recipe "latex"
 
-  #   # You may also specify custom JSON attributes:
-  #   chef.json = { :mysql_password => "foo" }
+    chef.json = { 
+        "sphinx" => {
+          "version" => "1.2.2"
+        }  
+    }
   end
 
  
