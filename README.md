@@ -34,7 +34,7 @@ vagrant plugin install vagrant-cachier
 If using VirtualBox 4.3.10: 
 
 ```
-* vagrant up; vagrant ssh -c 'sudo ln -s /opt/VBoxGuestAdditions-4.3.10/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions'; vagrant reload
+vagrant up; vagrant ssh -c 'sudo ln -s /opt/VBoxGuestAdditions-4.3.10/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions'; vagrant reload
 ```
 
 see issue https://github.com/mitchellh/vagrant/issues/3341
