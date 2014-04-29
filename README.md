@@ -25,7 +25,7 @@ vagrant plugin install vagrant-omnibus
 vagrant plugin install vagrant-cachier
 ```
 
-### Usage
+### Builind the VM
 
 If using VirtualBox 4.3.10: 
 
