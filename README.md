@@ -29,7 +29,7 @@ Plugin that helps you reduce the amount of coffee you drink while waiting for bo
 vagrant plugin install vagrant-cachier
 ```
 
-### Install NFS server
+### Install NFS server (Linux only)
 
 ```
 sudo apt-get install nfs-kernel-server
