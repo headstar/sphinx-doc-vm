@@ -9,22 +9,22 @@ Vagrant VM with Sphinx documentation + latex.
 
 ### Setup Vagrant plugins
 
-Plugin to automatically installs the host's VirtualBox Guest Additions on the guest system.
+Plugin to automatically installs the host's VirtualBox Guest Additions on the guest system:
 ``` 
 vagrant plugin install vagrant-vbguest
 ```
 
-Plugin to install Chef cookbooks using Librarian-Chef
+Plugin to install Chef cookbooks using Librarian-Chef:
 ```
 vagrant plugin install vagrant-librarian-chef
 ```
 
-Plugin that ensures the desired version of Chef is installed via the platform-specific Omnibus packages
+Plugin that ensures the desired version of Chef is installed via the platform-specific Omnibus packages:
 ```
 vagrant plugin install vagrant-omnibus
 ```
 
-Plugin that helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned. 
+Plugin that helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned:
 ```
 vagrant plugin install vagrant-cachier
 ```
