@@ -7,7 +7,7 @@ Vagrant VM with Sphinx documentation + latex.
 * Install VirtualBox (>= 4.3)
 * Install Vagrant (>= 1.5)
 
-### Setup Vagrant plugins
+### Setup
 
 Plugin to automatically installs the host's VirtualBox Guest Additions on the guest system:
 ``` 
@@ -27,6 +27,11 @@ vagrant plugin install vagrant-omnibus
 Plugin that helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned:
 ```
 vagrant plugin install vagrant-cachier
+```
+
+Install NFS server
+```
+sudo apt-get install nfs-kernel-server
 ```
 
 ### Build the VM
