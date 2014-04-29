@@ -1,4 +1,4 @@
-# added some 'unnecessary' extra package dependencies as a quick for the 10 minute package command timeout limit
+# added some 'unnecessary' extra package dependencies as a quick fix for the 10 minute package command timeout limit
 default['latex']['packages'] = ["texlive-base", 
                                 "texlive-latex-base", 
                                 "texlive-fonts-recommended",
