@@ -8,7 +8,7 @@ Prerequisites
 * Install Vagrant (> 1.5)
 
 Setup Vagrant plugins
-**********************
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 * vagrant plugin install vagrant-vbguest
 * vagrant plugin install vagrant-librarian-chef
