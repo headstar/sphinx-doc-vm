@@ -68,12 +68,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Example for VirtualBox:
   #
   config.vm.provider "virtualbox" do |vb|
-      # Don't boot with headless mode
+     # boot with headless mode
      vb.gui = false
   
      # Use VBoxManage to customize the VM. For example to change memory:
      vb.customize ["modifyvm", :id, "--memory", "1024"]
-
      vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 
@@ -91,6 +90,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       chef.add_recipe "apt"
       chef.add_recipe "python"
       chef.add_recipe "sphinx-doc"
+      chef.add_recipe "latex"
 
   #   # You may also specify custom JSON attributes:
   #   chef.json = { :mysql_password => "foo" }
