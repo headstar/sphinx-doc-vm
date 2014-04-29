@@ -39,7 +39,7 @@ If using VirtualBox 4.3.10:
 
 see issue https://github.com/mitchellh/vagrant/issues/3341
 
-Otherwise
+Otherwise:
 
 ```
 vagrant up
