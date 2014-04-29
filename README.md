@@ -5,7 +5,7 @@ Vagrant VM with Sphinx documentation + latex.
 ### Prerequisites
 
 * Install VirtualBox (>= 4.3)
-* Install Vagrant (> 1.5)
+* Install Vagrant (>= 1.5)
 
 ### Setup Vagrant plugins
 
