@@ -4,6 +4,7 @@ Vagrant VM with Sphinx documentation + latex.
 
 ### Prerequisites
 
+* Clone this repo to a directory on the same level as the directories (or higher up) with the Sphinx documentation source.
 * Install VirtualBox (>= 4.3)
 * Install Vagrant (>= 1.5)
 
