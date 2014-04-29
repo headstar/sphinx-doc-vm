@@ -59,4 +59,4 @@ $ vagrant ssh
 
 #### Access host machine
 
-To access your host machine use directory ```/vagrant``` (synced with host directory ```..```).
+To access your host machine, use directory ``/vagrant``. It's synced with host directory ``..`` (relative ``Vagrantfile``).
