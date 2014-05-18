@@ -1,6 +1,6 @@
 # General
 
-Vagrant VM with Sphinx documentation + latex.
+Vagrant VM with Sphinx documentation + LaTeX.
 
 ### Prerequisites
 
