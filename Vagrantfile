@@ -78,7 +78,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
      vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 
-  config.omnibus.chef_version = "11.12.2"
+  config.omnibus.chef_version = '12.0.3'
 
   # Enable provisioning with chef solo, specifying a cookbooks path, roles
   # path, and data_bags path (all relative to this Vagrantfile), and adding
