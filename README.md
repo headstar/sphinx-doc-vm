@@ -71,3 +71,9 @@ $ cd /vagrant/my-docs
 ```
 $ make latexpdf
 ```
+
+### SSL error
+
+```
+export SSL_CERT_DIR=/etc/ssl/certs
+```
